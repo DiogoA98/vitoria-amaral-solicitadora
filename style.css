@@ -182,3 +182,62 @@
     border-color: rgb(255, 195, 195);
     box-shadow: 0 0 15px rgb(80, 0, 0);
 }
+
+@media (max-width: 768px) {
+
+    .center-box {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Títulos */
+    .titulo {
+        font-size: 250%;
+    }
+
+    .subtitulo {
+        font-size: 180%;
+    }
+
+    .conteudo {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        transform: none;
+        box-shadow: none;
+    }
+
+    .contact-item {
+        font-size: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icon {
+        font-size: 22px;
+    }
+
+    .modern-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-modern {
+        width: 100%;
+        justify-content: center;
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    .mais-info {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 15px;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .footer-info {
+        bottom: 70px;
+    }
+}
