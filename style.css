@@ -193,11 +193,14 @@
     display: block;
 }
 
-#menu-toggle:checked ~ .overlay,
+#menu-toggle:checked ~ .overlay {
+    display: block;
+}
+
 #contactos:target ~ .overlay,
 #servicos:target ~ .overlay,
 #sobre:target ~ .overlay,
 #documentos:target ~ .overlay,
 #consulta:target ~ .overlay {
-    display: block;
+    display: none;
 }
