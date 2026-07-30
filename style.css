@@ -176,10 +176,3 @@
 #documentos:target ~ .footer-info {
     display: none;
 }
-
-#contactos:target ~ .mais-info,
-#servicos:target ~ .mais-info,
-#sobre:target ~ .mais-info,
-#documentos:target ~ .mais-info {
-    display: none;
-}
