@@ -64,11 +64,6 @@
     z-index: 999;
 }
 
-.sidebar h3 {
-    color: rgb(80, 0, 0);
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 .sidebar a {
     display: block;
