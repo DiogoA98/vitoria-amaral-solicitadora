@@ -191,4 +191,8 @@
     border-color: rgb(255, 195, 195);
 }
 
-
+#consulta:target {
+    display: block;
+    opacity: 1;
+    transform: perspective(900px) rotateX(0deg) translateY(0);
+}
