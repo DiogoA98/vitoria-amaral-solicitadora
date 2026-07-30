@@ -140,6 +140,12 @@
     transition: 0.3s ease;
 }
 
+.modern-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
 .btn-modern {
     padding: 12px 22px;
     border-radius: 50px;
