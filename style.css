@@ -51,6 +51,12 @@
     z-index: 1000;
 }
 
+.menu-btn:hover {
+    background: rgb(80 ,0, 0);
+    color: rgb(255, 195, 195);
+    border: 3px solid rgb(255, 195, 195);
+}
+
 .sidebar {
     position: fixed;
     top: 0;
