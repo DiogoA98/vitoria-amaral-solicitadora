@@ -183,20 +183,5 @@
     box-shadow: 0 0 15px rgb(80, 0, 0);
 }
 
-.mais-info {
-    position: static;
-    margin-top: 40px;
-}
-
-.footer-info {
-    position: static;
-    margin-top: 60px;
-    text-align: center;
-}
-
-.conteudo {
-    transform: perspective(900px) rotateX(5deg) translateY(10px);
-    margin-top: 30px;
-}
 
 
