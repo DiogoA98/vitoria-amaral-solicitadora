@@ -32,8 +32,10 @@
 }
 
 .footer-info {
-    position: static;
-    margin-top: 60px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
 }
 
