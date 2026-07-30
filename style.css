@@ -39,7 +39,6 @@
     text-align: center;
 }
 
-
 .footer-info h3,
 .footer-info h4 {
     margin: 0;
@@ -47,12 +46,12 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.botoes {
+.menu {
     text-align: left;
     margin-bottom: 20px;
 }
 
-.botoes a {
+.menu a {
     padding: 10px 20px;
     margin: 10px;
     font-size: 25px;
@@ -67,7 +66,7 @@
     margin-left: 220px;
 }
 
-.botoes a:hover {
+.menu a:hover {
     background: rgb(80, 0, 0);
     color: rgb(255, 195, 195);
     border: 3.5px solid rgb(255, 195, 195);
@@ -91,7 +90,10 @@
     margin-left: 20px;
 }
 
-#servicos:target {
+#contactos:target,
+#servicos:target,
+#sobre:target,
+#documentos:target {
     display: block;
     opacity: 1;
     transform: perspective(900px) rotateX(0deg) translateY(0);
@@ -173,7 +175,7 @@
 }
 
 .whatsapp {
-    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 195, 195));;
+    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 195, 195));
     border-color: rgb(80, 0, 0);
 }
 
@@ -184,9 +186,16 @@
     box-shadow: 0 0 15px rgb(80, 0, 0);
 }
 
-#servicos:target ~ .footer-info {
+#contactos:target ~ .footer-info,
+#servicos:target ~ .footer-info,
+#sobre:target ~ .footer-info,
+#documentos:target ~ .footer-info {
     display: none;
 }
 
-
-
+#contactos:target ~ .mais-info,
+#servicos:target ~ .mais-info,
+#sobre:target ~ .mais-info,
+#documentos:target ~ .mais-info {
+    display: none;
+}
