@@ -170,9 +170,3 @@
     transform: scale(1.07);
 }
 
-#contactos:target ~ .footer-info,
-#servicos:target ~ .footer-info,
-#sobre:target ~ .footer-info,
-#documentos:target ~ .footer-info {
-    display: none;
-}
