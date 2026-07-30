@@ -120,28 +120,6 @@
     transform: perspective(900px) rotateX(0deg) translateY(0);
 }
 
-.mais-info {
-    position: fixed;
-    bottom: 30px;
-    left: 85%;
-    transform: translateX(-50%);
-    color: rgb(80, 0, 0);
-    font-size: 15px;
-    text-decoration: none;
-    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 195, 195));
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 3px solid rgb(80, 0, 0);
-}
-
-.mais-info:hover {
-    background: rgb(80, 0, 0);
-    color: rgb(255, 195, 195);
-    border-color: rgb(255, 195, 195);
-    box-shadow: 0 0 15px rgb(80, 0, 0);
-    transition: 0.3s ease;
-}
-
 .modern-buttons {
     margin-top: 25px;
     display: flex;
