@@ -110,6 +110,8 @@
     opacity: 0;
     transition: opacity 1s ease, transform 1s ease;
     margin-left: 350px;
+    position: relative;
+    z-index: 1001;
 }
 
 #contactos:target,
