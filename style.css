@@ -188,8 +188,5 @@
     display: none;
 }
 
-#servicos:target ~ .mais-info {
-    display: none;
-}
 
 
