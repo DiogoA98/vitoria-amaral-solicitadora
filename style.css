@@ -192,3 +192,11 @@
 #menu-toggle:checked ~ .overlay {
     display: block;
 }
+
+#contactos:target ~ .overlay,
+#servicos:target ~ .overlay,
+#sobre:target ~ .overlay,
+#documentos:target ~ .overlay,
+#consulta:target ~ .overlay {
+    display: none;
+}
