@@ -202,5 +202,6 @@
 #sobre:target ~ .overlay,
 #documentos:target ~ .overlay,
 #consulta:target ~ .overlay {
-    display: none;
+    display: block;
 }
+
