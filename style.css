@@ -140,6 +140,30 @@
     transition: 0.3s ease;
 }
 
+.btn-modern {
+    padding: 12px 22px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(80, 0, 0);
+    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 195, 195));
+    border: 3px solid rgb(80, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-modern:hover {
+    background: rgb(80, 0, 0);
+    color: rgb(255, 195, 195);
+    border-color: rgb(255, 195, 195);
+    box-shadow: 0 0 15px rgb(80, 0, 0);
+    transform: scale(1.07);
+}
+
 #contactos:target ~ .footer-info,
 #servicos:target ~ .footer-info,
 #sobre:target ~ .footer-info,
