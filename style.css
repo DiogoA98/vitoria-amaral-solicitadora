@@ -184,5 +184,12 @@
     box-shadow: 0 0 15px rgb(80, 0, 0);
 }
 
+#servicos:target ~ .footer-info {
+    display: none;
+}
+
+#servicos:target ~ .mais-info {
+    display: none;
+}
 
 
