@@ -19,18 +19,6 @@
     margin-left: 200px;
 }
 
-.local {
-    color: rgb(80, 0, 0);
-    font-size: 150%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.locala {
-    color: rgb(80, 0, 0);
-    font-size: 130%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 .footer-info {
     position: fixed;
     bottom: 30px;
@@ -43,46 +31,76 @@
 .footer-info h4 {
     margin: 0;
     color: rgb(80, 0, 0);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.menu {
-    text-align: left;
+#menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgb(255, 195, 195);
+    color: rgb(80, 0, 0);
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 3px solid rgb(80, 0, 0);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(255, 195, 195), white);
+    border-right: 4px solid rgb(80, 0, 0);
+    padding: 20px;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.sidebar h3 {
+    color: rgb(80, 0, 0);
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.menu a {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 25px;
-    border-radius: 20px;
-    border: 3.5px solid rgb(80, 0, 0);
-    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 195, 195));
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    background: white;
     color: rgb(80, 0, 0);
-    text-decoration: none;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transition: 0.3s ease;
-    margin-left: 220px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid rgb(80, 0, 0);
+    transition: 0.2s;
 }
 
-.menu a:hover {
+.sidebar a:hover {
     background: rgb(80, 0, 0);
     color: rgb(255, 195, 195);
-    border: 3.5px solid rgb(255, 195, 195);
-    box-shadow: 0 0 25px rgb(80, 0, 0);
+}
+
+#menu-toggle:checked ~ .sidebar {
+    left: 0;
 }
 
 .conteudo {
     width: 40%;
     padding: 20px;
     border: 5px solid rgb(80, 0, 0);
-    background: linear-gradient(to bottom,rgb(255, 195, 195),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 195, 195));
+    background: linear-gradient(to bottom,rgb(255, 195, 195),white);
     border-radius: 20px;
     font-size: 20px;
     display: none;
     color: rgb(80, 0, 0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 0px 15px 35px rgb(80, 0, 0);
     transform: perspective(900px) rotateX(12deg) translateY(20px);
     opacity: 0;
@@ -99,28 +117,6 @@
     transform: perspective(900px) rotateX(0deg) translateY(0);
 }
 
-.conteudo ul {
-    list-style: none;
-    padding: 0;
-}
-
-.conteudo li {
-    margin-bottom: 12px;
-    font-size: 22px;
-}
-
-.contact-item {
-    font-size: 20px;
-    margin: 15px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.icon {
-    font-size: 25px;
-}
-
 .mais-info {
     position: fixed;
     bottom: 30px;
@@ -133,57 +129,6 @@
     padding: 10px 20px;
     border-radius: 10px;
     border: 3px solid rgb(80, 0, 0);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.mais-info:hover {
-    background: rgb(80, 0, 0);
-    color: rgb(255, 195, 195);
-    border-color: rgb(255, 195, 195);
-    box-shadow: 0 0 15px rgb(80, 0, 0);
-    transition: 0.3s ease;
-}
-
-.modern-buttons {
-    margin-top: 25px;
-    display: flex;
-    gap: 10px;
-}
-
-.btn-modern {
-    padding: 12px 22px;
-    border-radius: 50px;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(80, 0, 0);
-    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 195, 195));
-    border: 3px solid rgb(80, 0, 0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.btn-modern:hover {
-    background: rgb(80, 0, 0);
-    color: rgb(255, 195, 195);
-    border-color: rgb(255, 195, 195);
-    box-shadow: 0 0 15px rgb(80, 0, 0);
-    transform: scale(1.07);
-}
-
-.whatsapp {
-    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 195, 195));
-    border-color: rgb(80, 0, 0);
-}
-
-.whatsapp:hover {
-    background: rgb(80, 0, 0);
-    color: rgb(255, 195, 195);
-    border-color: rgb(255, 195, 195);
-    box-shadow: 0 0 15px rgb(80, 0, 0);
 }
 
 #contactos:target ~ .footer-info,
