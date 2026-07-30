@@ -171,3 +171,23 @@
     transform: scale(1.07);
 }
 
+.close-menu {
+    display: block;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: rgb(255, 195, 195);
+    color: rgb(80, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 3px solid rgb(80, 0, 0);
+    text-align: center;
+}
+
+.close-menu:hover {
+    background: rgb(80, 0, 0);
+    color: rgb(255, 195, 195);
+    border-color: rgb(255, 195, 195);
+}
+
+
