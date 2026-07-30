@@ -54,6 +54,7 @@
     background: rgb(80 ,0, 0);
     color: rgb(255, 195, 195);
     border: 3px solid rgb(255, 195, 195);
+    box-shadow: 0 0 15px rgb(80, 0, 0);
 }
 
 .sidebar {
