@@ -126,6 +126,14 @@
     border: 3px solid rgb(80, 0, 0);
 }
 
+.mais-info:hover {
+    background: rgb(80, 0, 0);
+    color: rgb(255, 195, 195);
+    border-color: rgb(255, 195, 195);
+    box-shadow: 0 0 15px rgb(80, 0, 0);
+    transition: 0.3s ease;
+}
+
 #contactos:target ~ .footer-info,
 #servicos:target ~ .footer-info,
 #sobre:target ~ .footer-info,
