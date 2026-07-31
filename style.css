@@ -59,7 +59,7 @@
 }
 
 .menu-btn::after {
-    content: "☰ Menu";
+    content: "☰";
 }
 
 #menu-toggle:checked + .menu-btn::after {
