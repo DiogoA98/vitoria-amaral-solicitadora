@@ -161,7 +161,7 @@
     transform: scale(1.07);
 }
 
-.close-menu {
+.back {
     display: block;
     padding: 12px;
     margin-bottom: 20px;
@@ -174,7 +174,7 @@
     text-align: center;
 }
 
-.close-menu:hover {
+.back:hover {
     background: rgb(80, 0, 0);
     color: rgb(255, 195, 195);
     border-color: rgb(255, 195, 195);
