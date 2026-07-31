@@ -128,7 +128,7 @@
 #documentos:target {
     display: block;
     opacity: 1;
-    transform: perspective(900px) rotateX(0deg) translateY(0);
+    transform: translateY(0);
 }
 
 .modern-buttons {
