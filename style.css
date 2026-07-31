@@ -114,9 +114,9 @@
     display: none;
     color: rgb(80, 0, 0);
     box-shadow: 0px 10px 25px rgb(80, 0, 0);
-    transform: perspective(900px) rotateX(8deg) translateY(15px);
+    transform: translateY(30px);
     opacity: 0;
-    transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     margin-left: 350px;
     position: relative;
     z-index: 1001;
