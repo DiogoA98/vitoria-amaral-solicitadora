@@ -58,10 +58,6 @@
     box-shadow: 0 0 15px rgb(80, 0, 0);
 }
 
-.menu-btn::after {
-    content: "☰ Menu";
-}
-
 .sidebar {
     position: fixed;
     top: 0;
