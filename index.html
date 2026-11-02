@@ -1,105 +1,643 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
+
 <head>
     <meta charset="UTF-8">
-    <title>Vitoria Amaral - Solicitadora</title>
-    <link rel="icon" type="image/png" href="balan.png">
-    <link rel="stylesheet" href="style.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Vitória Brás Amaral, Solicitadora no Sabugal. Serviços jurídicos, contactos e marcações."
+    >
+
+    <title>Vitória Brás Amaral | Solicitadora</title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="balan.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
-<body onload="location.hash='#'" class="bg">
+<body>
 
+    <!-- Barra decorativa superior -->
     <div class="header-bar"></div>
 
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-btn"></label>
+    <!-- Botão que abre o menu lateral -->
+    <button
+        type="button"
+        class="menu-button"
+        id="menuButton"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="sidebar"
+    >
+        <span class="menu-icon">☰</span>
+        <span class="menu-button-text">Menu</span>
+    </button>
 
-    <div class="sidebar">
-        <br><br><br><br>
-        <a href="#contactos">📞 Contactos</a>
-        <a href="#servicos">📑 Serviços</a>
-        <a href="#documentos">📄 Documentos</a>
-        <a href="#consulta">📅 Marcações</a>
-        <a href="#sobre">ℹ️ Sobre</a>
-        <a href="#" class="back">↩ Retroceder</a>
-    </div>
-    
-    <h1 class="titulo">Vitória Brás Amaral</h1>
-    <h2 class="subtitulo">Solicitadora</h2>
+    <!-- Fundo escuro apresentado quando o menu está aberto -->
+    <div
+        class="menu-overlay"
+        id="menuOverlay"
+    ></div>
 
-    <br>
+    <!-- Menu lateral -->
+    <aside
+        class="sidebar"
+        id="sidebar"
+        aria-hidden="true"
+    >
+        <div class="sidebar-header">
 
-    <div id="contactos" class="conteudo">
+            <div class="sidebar-brand">
+                <img
+                    src="balan.png"
+                    alt=""
+                    class="sidebar-logo"
+                >
 
-        <div class="contact-item">
-            <span class="icon">📞</span>
-            <b>Telefone / Telemóvel:</b> 271753974 / 967000789
+                <div>
+                    <strong>Vitória Brás Amaral</strong>
+                    <span>Solicitadora</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="sidebar-close"
+                id="sidebarClose"
+                aria-label="Fechar menu"
+            >
+                ×
+            </button>
+
         </div>
-        <br>
-        <div class="contact-item">
-            <span class="icon">📍</span>
-            <b>Morada:</b> Largo da Fonte, nº 5, 1ºAndar, 6320-330
+
+        <nav
+            class="sidebar-navigation"
+            aria-label="Menu principal"
+        >
+            <button
+                type="button"
+                class="navigation-item active"
+                data-section="inicio"
+            >
+                <span class="navigation-icon">⌂</span>
+                <span>Início</span>
+            </button>
+
+            <button
+                type="button"
+                class="navigation-item"
+                data-section="servicos"
+            >
+                <span class="navigation-icon">⚖</span>
+                <span>Serviços</span>
+            </button>
+
+            <button
+                type="button"
+                class="navigation-item"
+                data-section="documentos"
+            >
+                <span class="navigation-icon">▤</span>
+                <span>Documentos</span>
+            </button>
+
+            <button
+                type="button"
+                class="navigation-item"
+                data-section="contactos"
+            >
+                <span class="navigation-icon">☎</span>
+                <span>Contactos</span>
+            </button>
+
+            <button
+                type="button"
+                class="navigation-item"
+                data-section="marcacoes"
+            >
+                <span class="navigation-icon">▣</span>
+                <span>Marcações</span>
+            </button>
+
+            <button
+                type="button"
+                class="navigation-item"
+                data-section="sobre"
+            >
+                <span class="navigation-icon">i</span>
+                <span>Sobre</span>
+            </button>
+        </nav>
+
+        <div class="sidebar-footer">
+            <span>Serviços Jurídicos</span>
+            <small>Sabugal, Guarda</small>
         </div>
-        <br>
-        <div class="contact-item">
-            <span class="icon">📧</span>
-            <b>Email:</b> 6556@solicitador.net
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- INÍCIO -->
+        <section
+            class="page-section active"
+            id="inicio"
+        >
+            <div class="hero">
+
+                <div class="hero-content">
+
+                    <div class="hero-label">
+                        Serviços jurídicos no Sabugal
+                    </div>
+
+                    <h1>
+                        Vitória Brás
+                        <span>Amaral</span>
+                    </h1>
+
+                    <p class="hero-profession">
+                        Solicitadora
+                    </p>
+
+                    <p class="hero-description">
+                        Atendimento profissional e personalizado na prestação
+                        de serviços jurídicos e administrativos.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <button
+                            type="button"
+                            class="primary-button"
+                            data-open-section="contactos"
+                        >
+                            Entrar em contacto
+                        </button>
+
+                        <button
+                            type="button"
+                            class="secondary-button"
+                            data-open-section="servicos"
+                        >
+                            Conhecer os serviços
+                        </button>
+
+                    </div>
+
+                    <div class="hero-details">
+
+                        <div class="hero-detail">
+                            <span class="detail-icon">⌖</span>
+
+                            <div>
+                                <small>Localização</small>
+                                <strong>Sabugal, Guarda</strong>
+                            </div>
+                        </div>
+
+                        <div class="hero-detail">
+                            <span class="detail-icon">◷</span>
+
+                            <div>
+                                <small>Horário</small>
+                                <strong>Terça a sexta-feira</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-image-area">
+
+                    <div class="hero-image-decoration"></div>
+
+                    <img
+                        src="solicitadora.png"
+                        alt="Imagem de apresentação profissional"
+                        class="hero-image"
+                    >
+
+                    <div class="professional-card">
+                        <span>Serviços Jurídicos</span>
+                        <strong>Confiança e proximidade</strong>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section
+            class="page-section"
+            id="servicos"
+        >
+            <div class="section-container">
+
+                <div class="section-heading">
+                    <span class="section-label">Áreas de atuação</span>
+                    <h2>Serviços disponíveis</h2>
+
+                    <p>
+                        Consulte algumas das áreas de apoio jurídico e
+                        administrativo disponíveis.
+                    </p>
+                </div>
+
+                <div class="service-grid">
+
+                    <article class="service-card">
+                        <span class="service-number">01</span>
+                        <div class="service-icon">✒</div>
+                        <h3>Reconhecimento de assinaturas</h3>
+                        <p>
+                            Apoio na identificação e reconhecimento de
+                            assinaturas em documentos.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-number">02</span>
+                        <div class="service-icon">▤</div>
+                        <h3>Autenticação de documentos</h3>
+                        <p>
+                            Autenticação e certificação de documentos para
+                            diferentes finalidades.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-number">03</span>
+                        <div class="service-icon">⚖</div>
+                        <h3>Processos jurídicos</h3>
+                        <p>
+                            Acompanhamento e apoio em diferentes procedimentos
+                            de natureza jurídica.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-number">04</span>
+                        <div class="service-icon">✓</div>
+                        <h3>Apoio administrativo</h3>
+                        <p>
+                            Preparação, organização e acompanhamento de
+                            documentação administrativa.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DOCUMENTOS -->
+        <section
+            class="page-section"
+            id="documentos"
+        >
+            <div class="section-container">
+
+                <div class="section-heading">
+                    <span class="section-label">Informação útil</span>
+                    <h2>Documentos</h2>
+
+                    <p>
+                        Alguns dos documentos que podem ser tratados ou
+                        preparados no âmbito dos serviços prestados.
+                    </p>
+                </div>
+
+                <div class="document-list">
+
+                    <article class="document-card">
+                        <span class="document-icon">▤</span>
+
+                        <div>
+                            <h3>Certidões</h3>
+                            <p>
+                                Apoio na obtenção e tratamento de certidões.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="document-card">
+                        <span class="document-icon">✒</span>
+
+                        <div>
+                            <h3>Procurações</h3>
+                            <p>
+                                Preparação e acompanhamento de procurações.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="document-card">
+                        <span class="document-icon">✓</span>
+
+                        <div>
+                            <h3>Declarações</h3>
+                            <p>
+                                Preparação de declarações e documentos
+                                administrativos.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="section-note">
+                    <span>i</span>
+
+                    <p>
+                        Para confirmar os documentos necessários para cada
+                        serviço, entre diretamente em contacto.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACTOS -->
+        <section
+            class="page-section"
+            id="contactos"
+        >
+            <div class="section-container">
+
+                <div class="section-heading">
+                    <span class="section-label">Fale connosco</span>
+                    <h2>Contactos</h2>
+
+                    <p>
+                        Utilize um dos contactos disponíveis ou selecione uma
+                        das opções de contacto rápido.
+                    </p>
+                </div>
+
+                <div class="contact-layout">
+
+                    <div class="contact-cards">
+
+                        <article class="contact-card">
+                            <span class="contact-icon">☎</span>
+
+                            <div>
+                                <small>Telefone e telemóvel</small>
+
+                                <a href="tel:271753974">
+                                    271 753 974
+                                </a>
+
+                                <a href="tel:967000789">
+                                    967 000 789
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="contact-card">
+                            <span class="contact-icon">✉</span>
+
+                            <div>
+                                <small>Email</small>
+
+                                <a href="mailto:6556@solicitador.net">
+                                    6556@solicitador.net
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="contact-card">
+                            <span class="contact-icon">⌖</span>
+
+                            <div>
+                                <small>Morada</small>
+
+                                <strong>
+                                    Largo da Fonte, n.º 5, 1.º andar
+                                </strong>
+
+                                <span>6320-330 Sabugal</span>
+                            </div>
+                        </article>
+
+                        <article class="contact-card">
+                            <span class="contact-icon">◷</span>
+
+                            <div>
+                                <small>Horário</small>
+                                <strong>Terça a sexta-feira</strong>
+                                <span>09:30 às 17:00</span>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="quick-contact">
+
+                        <span class="section-label">Contacto rápido</span>
+                        <h3>Como prefere contactar?</h3>
+
+                        <p>
+                            Escolha a opção mais conveniente para falar
+                            diretamente com o escritório.
+                        </p>
+
+                        <div class="quick-contact-buttons">
+
+                            <a
+                                class="contact-action"
+                                href="tel:967000789"
+                            >
+                                <span>☎</span>
+                                <div>
+                                    <small>Contacto direto</small>
+                                    <strong>Ligar agora</strong>
+                                </div>
+                            </a>
+
+                            <a
+                                class="contact-action"
+                                href="mailto:6556@solicitador.net"
+                            >
+                                <span>✉</span>
+                                <div>
+                                    <small>Mensagem escrita</small>
+                                    <strong>Enviar email</strong>
+                                </div>
+                            </a>
+
+                            <a
+                                class="contact-action"
+                                href="https://wa.me/351967000789"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span>⌁</span>
+                                <div>
+                                    <small>Resposta rápida</small>
+                                    <strong>WhatsApp</strong>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MARCAÇÕES -->
+        <section
+            class="page-section"
+            id="marcacoes"
+        >
+            <div class="section-container">
+
+                <div class="booking-panel">
+
+                    <div class="booking-content">
+                        <span class="section-label">Agendamento</span>
+                        <h2>Marcar um contacto</h2>
+
+                        <p>
+                            Entre em contacto para solicitar informações ou
+                            combinar o melhor horário para atendimento.
+                        </p>
+
+                        <div class="booking-options">
+
+                            <a
+                                href="tel:967000789"
+                                class="booking-button"
+                            >
+                                <span>☎</span>
+                                Ligar
+                            </a>
+
+                            <a
+                                href="mailto:6556@solicitador.net"
+                                class="booking-button"
+                            >
+                                <span>✉</span>
+                                Enviar email
+                            </a>
+
+                            <a
+                                href="https://wa.me/351967000789"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="booking-button"
+                            >
+                                <span>⌁</span>
+                                WhatsApp
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="booking-decoration">
+
+                        <div class="calendar-card">
+                            <span class="calendar-icon">▣</span>
+                            <small>Atendimento</small>
+                            <strong>Terça a sexta-feira</strong>
+                            <p>09:30 às 17:00</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section
+            class="page-section"
+            id="sobre"
+        >
+            <div class="section-container">
+
+                <div class="about-layout">
+
+                    <div class="about-visual">
+                        <img
+                            src="balan.png"
+                            alt=""
+                            class="about-logo"
+                        >
+                    </div>
+
+                    <div class="about-content">
+                        <span class="section-label">
+                            Apresentação profissional
+                        </span>
+
+                        <h2>Sobre</h2>
+
+                        <p>
+                            Profissional com experiência na prestação de
+                            serviços jurídicos e administrativos, com
+                            atendimento no Sabugal.
+                        </p>
+
+                        <p>
+                            Para obter informações detalhadas sobre um processo,
+                            serviço ou documento, utilize os contactos
+                            disponíveis.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="primary-button"
+                            data-open-section="contactos"
+                        >
+                            Entrar em contacto
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+
+        <div>
+            <strong>Vitória Brás Amaral</strong>
+            <span>Solicitadora</span>
         </div>
-        <br>
-        <div class="contact-item">
-            <span class="icon">⏰</span>
-            <b>Horário:</b> Terça a Sexta-feira → 9:30 / 17:00
-        </div>
-        <br>
-        <div class="modern-buttons">
-            <a class="btn-modern call" href="tel:967000789">📞 Ligar</a>
-            <a class="btn-modern email" href="mailto:6556@solicitador.net">✉️ Email</a>
-            <a class="btn-modern whatsapp" href="https://wa.me/351967000789" target="_blank">💬 WhatsApp</a>
-        </div>
 
-    </div>
+        <p>Serviços Jurídicos · Sabugal, Guarda</p>
 
-    <div id="servicos" class="conteudo">
-        <h3>📑 Serviços Disponíveis</h3>
-        <ul>
-            <li>Reconhecimento de assinaturas</li>
-            <li>Autenticação de documentos</li>
-            <li>Processos jurídicos</li>
-            <li>Apoio administrativo</li>
-        </ul>
-    </div>
+    </footer>
 
-    <div id="sobre" class="conteudo">
-        <h3>ℹ️ Sobre</h3>
-        <p>Profissional com vasta experiência em serviços jurídicos e administrativos.</p>
-    </div>
-
-    <div id="documentos" class="conteudo">
-        <h3>📄 Documentos</h3>
-        <ul>
-            <li>Certidões</li>
-            <li>Procurações</li>
-            <li>Declarações</li>
-        </ul>
-    </div>
-
-    <div id="consulta" class="conteudo">
-    <h3>📅 Marcações</h3>
-
-    <div class="modern-buttons">
-        <a class="btn-modern call" href="tel:967000789">📞 Ligar</a>
-        <a class="btn-modern email" href="mailto:6556@solicitador.net">✉️ Email</a>
-        <a class="btn-modern whatsapp" href="https://wa.me/351967000789" target="_blank">💬 WhatsApp</a>
-    </div>
-</div>
-    
-    <div class="overlay"></div>
-
-    <div class="footer-info">
-        <h3 class="local">Serviços Jurídicos</h3>
-        <h4 class="locala">Sabugal, Guarda</h4>
-    </div>
-
+    <script src="script.js"></script>
 
 </body>
+
 </html>
